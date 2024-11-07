@@ -1,4 +1,3 @@
-
 #include <DHT.h>     
 #include <Ds1302.h>
 #include <LedControl.h>
@@ -98,7 +97,7 @@ void loop() {
 
 void dhtInfo()
 {
-    //  Переменная для считывания значения температуры (в градусах Цельсия)
+    // Celsuis, use different arguments for Fahrenheit (check library docs).
     int t = (int)dht.readTemperature();
   
     if (t < 0)                  
@@ -143,7 +142,7 @@ void setTime()
       }
       else 
       {
-        Serial.println("Fuck off!");
+        Serial.println("Cannot parse input, ignoring.");
         return;
       }
       
