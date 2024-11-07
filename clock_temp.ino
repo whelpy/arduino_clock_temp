@@ -62,7 +62,7 @@ void loop() {
     rtc.getDateTime(&now);
 
     // dim at night time
-    if (now.hour > 22 || now.hour < 8)
+    if (now.hour >= 22 || now.hour < 8)
     {
       lc.setIntensity(0,2); 
     }
