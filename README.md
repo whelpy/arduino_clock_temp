@@ -9,7 +9,7 @@ Used parts:
 Setting time.
 Write hours and minutes without a delimeter into the serial port.
 For example, 13:33:55 should be written as 1333. It will be saved into the RTC module.
-It could be done using Arduino IDE port monitor, or just use included bash script: "setClock.sh 1333", just set proper port number in the script.
+It could be done using Arduino IDE port monitor, or just use included bash script: "./setClock.sh 1333", make sure to edit port number in the script.
 
 Temperature uses last 2 digits, and might also use one more digit for "minus" symbol. Measurement unit is Celsius.
 
