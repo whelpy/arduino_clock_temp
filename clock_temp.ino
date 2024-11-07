@@ -93,7 +93,7 @@ void loop() {
         dhtInfo();
     }
     
-  delay(100);
+  delay(5000);
 }
 
 void dhtInfo()
